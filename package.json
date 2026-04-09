@@ -1,0 +1,25 @@
+{
+  "name": "learning-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/pm2 start src/index.js --watch",
+    "test": "jest --runInBand --detectOpenHandles",
+    "stop": "node_modules/.bin/pm2 kill",
+    "logs": "node_modules/.bin/pm2 logs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest-junit-reporter": "^1.1.0",
+    "mongoose": "^9.4.1",
+    "pm2": "^4.5.4"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
+  }
+}
